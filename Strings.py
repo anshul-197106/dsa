@@ -74,11 +74,11 @@
 
 #regex -> regular expression -> pattern matching
 # search the word from strings
-# import re
-# text = "Hello World";
-# result = re.search("World", text)
-# if result:
-#     print("Match found")
+import re
+text = "Hello World";
+result = re.search("World", text)
+if result:
+    print("Match found")
 
 # generate list of word with the findball
 # s = "cat bat rat mat"
