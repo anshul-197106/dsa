@@ -322,19 +322,123 @@
 # except AgeNotValid as e:
 #     print(e)
 
-class Student:
-    def __init__(self, name, marks):
-        if not (0 <= marks <= 100):
-            raise ValueError("Marks must be between 0 and 100")
-        self.name = name
-        self.marks = marks
+# class Student:
+#     def __init__(self, name, marks):
+#         if not (0 <= marks <= 100):
+#             raise ValueError("Marks must be between 0 and 100")
+#         self.name = name
+#         self.marks = marks
 
-try:
-    s1 = Student("Alice", 85)   
-    print(f"{s1.name} scored {s1.marks}")
+# try:
+#     s1 = Student("Alice", 85)   
+#     print(f"{s1.name} scored {s1.marks}")
     
-    s2 = Student("Bob", 120)   
-    print(f"{s2.name} scored {s2.marks}")
+#     s2 = Student("Bob", 120)   
+#     print(f"{s2.name} scored {s2.marks}")
 
-except ValueError as e:
-    print("Error:", e)
+# except ValueError as e:
+#     print("Error:", e)
+
+# class method and static method
+# class method -> it works with class variables
+# cls
+# @classmethod
+
+# class Student:
+#     school = "ABM"; #class variable
+
+#     @classmethod
+#     def change(cls, newName):
+#         cls.school = newName
+# Student.change("ABK");
+# print(Student.school)
+
+# #static method --> Normal function but inside a class
+# # No self, no class
+# class A:
+#     @staticmethod
+#     def add(a, b):
+#         return a + b
+# print(A.add(10,20));
+
+
+# class Student:
+#     name = "Ansh";
+
+#     @classmethod
+#     def change(cls, updatename):
+#         cls.name =  updatename
+# Student.change("Jk");
+# print(Student.name)   
+  
+# File Handling -> Store the data permanently
+#  open, read, write, append, delete, close
+
+#! Types of files -> text files, binary files
+# text files modes --> r, w, r+, w+, a
+# binary files -> rb, wb
+
+# f = open("new.txt", "w");
+# f.write("This is text File")
+# f.write("\n heyyy")
+
+# f= open("new.txt", "r");
+# data = f.read()
+# data = f.readline()  #only one line print
+# print(data)
+
+# #! update
+# f = open("new.txt", "a")
+# f.write("\n80") #append 
+
+# #! Delete
+# import os
+# os.remove("new.txt")
+
+#! tell() -> to cehck position of cursor 
+# seek() -> changing the location of cursor position 
+
+# f = open("new.txt", "r+");
+# print(f.tell())
+# f.seek(5);
+# print(f.tell())
+# f.write("hey")
+# f.seek(0)
+# print(f.tell())
+# f.write("hy")
+
+
+#! With 
+# import os
+# with open("newnew.txt","w") as f:
+#     f.write("This is a new file...")
+
+# os.remove("newnew.txt") #close/remove the file
+
+#Binary
+# f=open("lol.jpg","rb");
+# data = f.read();
+# print(data)
+
+# CSV
+# import csv
+# with open ("menu.csv", "w") as f:
+#     reader = csv.DictReader(f)
+#     for i in reader:
+#         print(i)
+
+
+#Python objects --> file
+#pickle -> dump, load
+# import pickle
+# dict= {"name": "Dictionary_Object",
+#     "id" : 1
+# }
+# with open ("Data.dat", "wb") as f:
+#     pickle.dump(dict, f)
+# print("Data dumped Sucessfully")
+
+# with open ("Data.dat", "rb") as f:
+#     data = pickle.load(f)
+#     print(data)
+

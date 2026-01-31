@@ -2,10 +2,10 @@
 # dict = {
 #     "name" : ["ABC", "XSW"],
 #     "ID" : 1,
-    # "adress" : {
-    #     "Home" : "Chd",
-    #     "Work" : "Delhi",
-    # },
+#     "adress" : {
+#         "Home" : "Chd",
+#         "Work" : "Delhi",
+#     },
 # }
 
 # print(dict["adress"]["Home"])

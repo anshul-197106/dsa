@@ -59,32 +59,32 @@
 
 
 # Abstract Class Example
-# from abc import ABC, abstractmethod
-# import math
+from abc import ABC, abstractmethod
+import math
 
-# class Shape(ABC):
-#     @abstractmethod
-#     def area(self):
-#         pass
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
 
-# class Rectangle(Shape):
-#     def __init__(self, l, b):
-#         self.l = l
-#         self.b = b
+class Rectangle(Shape):
+    def __init__(self, l, b):
+        self.l = l
+        self.b = b
 
-#     def area(self):
-#         return self.l * self.b
+    def area(self):
+        return self.l * self.b
 
-# class Circle(Shape):
-#     def __init__(self, r):
-#         self.r = r
+class Circle(Shape):
+    def __init__(self, r):
+        self.r = r
 
-#     def area(self):
-#         return math.pi * self.r * self.r
+    def area(self):
+        return math.pi * self.r * self.r
 
-# r = Rectangle(5, 4)
-# c = Circle(3)
+r = Rectangle(5, 4)
+c = Circle(3)
 
-# print("Rectangle Area:", r.area())
-# print("Circle Area:", c.area())
+print("Rectangle Area:", r.area())
+print("Circle Area:", c.area())
 
