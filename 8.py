@@ -16,3 +16,15 @@ class Student(Person):
 
 s = Student("Anshul", 101)
 s.show()
+
+Type Error 
+x = "hello"
+y = 15
+print(x + y)
+
+try:
+  x = "hello" 
+except TypeError:
+  print("Please convert to string before concatenate")
+except:
+  print("Something else went wrong")
