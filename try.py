@@ -83,7 +83,7 @@
 # for i in colors:
 #     print(i)
 
-# Generaor : 
+# Generaor : A generator is a function that uses the yield keyword to return values one at a time and remembers its state between calls.
 #
 # def test():
 #     yield 10
@@ -94,6 +94,16 @@
 # print(next(it)) 
 # print(next(it)) 
 # print(next(it)) 
+
+#  genrator ex
+# def gen():
+#         x = yield "Hello"
+#         yield x;
+
+# res = gen()
+# print(next(res))
+# #! send 
+# print(res.send(10))
 
 
 # create a fun that return even number form 1 to 10 
@@ -121,9 +131,114 @@
 
 # generator expression
 
-gen = (x*x for x in range(6));
-it = gen;
-print(next(it))
-print(next(it))
-print(next(it))
+# gen = (x*x for x in range(6));
+# it = gen;
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+# Meemory efficiency 
+
+# def read():
+#     with open("new.txt") as f:
+#         for line in f:
+#             yield line
+
+# res = read()
+# print(next(res))
+
+# create 3 genrator 1 for even no(1-10), 1 for sum of odd number(1=10), 1 for sum of even sum of odd number(gen 1  and gen 2)
+# def even_gen():
+#     for i in range(1, 11):
+#         if i % 2 == 0:
+#             yield i
+
+# def odd_sum_gen():
+#     total = 0
+#     for i in range(1, 11):
+#         if i % 2 != 0:
+#             total += i
+#     yield total
+
+# def total_sum_gen():
+#     even_sum = sum(even_gen())
+#     odd_sum = next(odd_sum_gen())
+#     yield even_sum + odd_sum
+
+# print("Even numbers are:")
+# print(list(even_gen()))
+
+# print("Sum of odd numbers:")
+# print(next(odd_sum_gen()))
+
+# print("Total sum (even + odd):")
+# print(next(total_sum_gen()))
+
+# closure --- inner func can remember the value of outer function
+# decorators like a (==) closure
+# 3 - layer function -- use parameter with decorator
+# factory -- decorator -- wrapper
+
+# def auth(role):
+#     def dec(fx):
+#         def wrapper():
+#                 print("Greetings {role}")
+#                 fx()
+#         return wrapper
+#     return dec
+
+# @auth("admin")
+# def hello():
+#     print("Hello")
+
+# hello()
+ 
+# stack decorators 
+# def dec1(fx):
+#     def wrapper():
+#         print("Before dec 1")
+#         fx():
+#         print("after dec 1")
+
+#     return wrapper
+
+# def dec2(fx):
+#     def wrapper():
+#         print("Before dec 2")
+#         fx():
+#         print("after dec 2")
+
+#     return wrapper
+
+# @dec1
+# @dec2
+# def test
+
+# factory decorator 
+# def fact(times):
+#     def dec(fx):
+#         def wrapper():
+#             for _ in range(times):
+#                 fx()
+#         return wrapper
+#     return dec
+
+# @fact(3)
+# def hey():
+#     print("heyo")
+# hey()
+
+
+# def gen1():
+#     try:
+#         yield 1 
+#     except ValueError:
+#         print("ValueError")
+
+# res = gen1()
+# print(next(res))
+# res.throw(ValueError)
+
+
+
 
