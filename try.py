@@ -215,6 +215,7 @@
 # def test
 
 # factory decorator 
+
 # def fact(times):
 #     def dec(fx):
 #         def wrapper():
@@ -238,7 +239,3 @@
 # res = gen1()
 # print(next(res))
 # res.throw(ValueError)
-
-
-
-

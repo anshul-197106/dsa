@@ -19,7 +19,7 @@
 
 # Lambda function --> Anonymous function
 
-add = lambda a,b : a + b;
-print(add(15,16));
+# add = lambda a,b : a + b;
+# print(add(15,16));
 
 # list 
