@@ -1,3 +1,92 @@
+.container {
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    position: absolute;
+    z-index: -1;
+}
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+#div2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid black;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;
+}
+#div3{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid black;
+    position: relative;
+    z-index: 1;
+    border-radius: 0px 20px 20px  20px;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+#container {
+    background-color: blueviolet;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+}
+
+#div1 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+    top: -40px;
+    left: -40px;
+}
+
+#div2 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+
+#div3 {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+}
+
+#div4 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+
+} */
+
+
 /* body{
     background: greenyellow;
     justify-content: center;
@@ -34,3 +123,4 @@ button{
     font-size: 20px;
 }
  */
+
