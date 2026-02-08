@@ -1,106 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anshul Bhuria | Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
+  <!-- NAVBAR -->
+  <nav class="nav glass">
     <ul>
-      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <button id="themeToggle">🌙</button>
   </nav>
 
-  <!-- Hero Header -->
-  <header class="header">
-    <section class="hero">
+  <!-- HERO -->
+  <section id="home" class="hero reveal">
+    <h1>Hey, I’m <span>Anshul</span></h1>
 
-      <h1>Hey, I'm <span>Anshul</span></h1>
+    <div class="badge">
+      <span class="dot"></span> Creative Frontend Developer
+    </div>
 
-      <div class="badge">
-        <span class="dot"></span>
-        Creative Frontend Developer
+    <h2>
+      Crafting Interfaces, Learning Systems,<br>
+      and Exploring Intelligence
+    </h2>
+
+    <p>
+      I build clean, responsive, and interactive web experiences
+      that feel intuitive and alive.
+    </p>
+
+    <div class="buttons">
+      <a href="#contact" class="btn primary">Contact Me</a>
+      <a href="#" class="btn outline">My Resume</a>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <span>MAINTAINABLE</span>
+    <span>USABLE</span>
+    <span>SECURE</span>
+    <span>PERFORMANT</span>
+    <span>SCALABLE</span>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      Passionate web developer learning Python, AI, and backend systems.
+      I enjoy turning ideas into real-world projects.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Hospital Management</h3>
+        <p>Flask based patient system</p>
       </div>
-
-      <h2>
-        Crafting Interfaces, Learning Systems,<br>
-        and Exploring Intelligence
-      </h2>
-
-      <p class="subtitle">
-        • Web Developer • Python Learner 
-      </p>
-
-    </section>
-  </header>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <!-- <h2>About Me</h2> -->
-    <p>
-      I am a passionate learner interested in web development, Python,
-      and building real-world projects. I enjoy learning new technologies
-      and improving my skills every day.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <!-- <h2>Skills</h2> -->
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>Flask</span>
-      <span>Bootstrap</span>
+      <div class="card">
+        <h3>Job Scheduling</h3>
+        <p>Genetic Algorithm optimizer</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio</h3>
+        <p>Modern responsive website</p>
+      </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <!-- <h2>Projects</h2> -->
-
-    <div class="card">
-      <h3>Hospital Management System</h3>
-      <p>Flask-based web app to manage patients and records.</p>
-    </div>
-
-    <div class="card">
-      <h3>Job Scheduling using Genetic Algorithm</h3>
-      <p>Optimized VM job allocation using Python & GA.</p>
-    </div>
-
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Personal responsive portfolio using HTML & CSS.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <!-- <h2>Contact</h2> -->
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
     <p>Email: anshul@example.com</p>
-    <p>
-      <i class="bi bi-github"></i> GitHub &nbsp;|&nbsp;
-      <i class="bi bi-linkedin"></i> LinkedIn
-    </p>
   </section>
 
-  <!-- Footer -->
   <footer>
     © 2026 Anshul Bhuria
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
