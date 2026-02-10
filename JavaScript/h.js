@@ -108,6 +108,7 @@
 
 
 //! Query Selector
+
 //ID
 // let head = document.querySelector("#head");
 // head.style.color = "red";
@@ -124,3 +125,35 @@
 // let head = document.querySelector("h3");
 // head.style.color = "red";
 
+
+// document.getElementById("head").innerHTML = "This is Heading";
+
+// let div = document.getElementById("div");
+
+// let p = document.createElement("p");
+// div.append(p);
+// p.innerHTML = "Paragraph"
+
+// p.classList.add("para"); 
+
+
+// let main = document.getElementById("main");
+
+// const handleClick = () => {
+//     if (main.style.display === "none") {
+//         main.style.display = "block";
+//     } else {
+//         main.style.display = "none";
+//     }
+// };
+
+colors = ["red", "blue", "green", "orange", "purple", "black"];
+i = 0;
+
+const handleClick = () => {
+    // i = i + 1;
+    // document.getElementById("main").style.backgroundColor = colors[i];
+
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    document.getElementById("main").style.backgroundColor = colors[randomIndex];
+}
