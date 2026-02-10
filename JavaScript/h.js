@@ -32,7 +32,95 @@
 
 
 // const a = 50;
-// a = 40;
 // console.log(a)
 
+
+// test(10, 20);
+// function test(a, b){
+//     console.log(a+ b)
+// }
+// test(10, 20);
+
+
+// Hoisting -- var function --> you can use function or varaiable with var before declaration
+// var a = 10;
+// console.log(a);
+// a = 20;
+
+// // Arrow Functions :: 
+// test = () => {
+//     console.log("Functions...")
+// }
+// test()
+
+// create a function from arrow function which display the fun message
+// const message = () => {
+//   const name = prompt("Enter your name");
+//   alert(`Hello ${name}!`);
+// }
+// message();
+
+// const userName = () => {
+//   a = prompt("Enter your name: ")
+//   return a;
+// }
+// userName();
+
+// for ( let i = 0; i <=5; i++){
+//   console.log(i);
+// }
+
+// var num = 4;
+// let res = num%2==0 ? "even": "odd";
+// console.log(res)
+
+
+//getElementByID()
+//getElementsByClassName()
+//getElementByTagName()
+//querySelector()
+//querySelectorAll()
+
+// let headingOne = document.getElementById("head");
+// headingOne.style.color="red";
+
+
+// var headClass = document.getElementsByClassName("headClass");
+// headClass[1].style.color = "red";
+// console.log(headClass.length);
+
+//!getElementByID
+
+// let head = document.getElementById("head");
+// head.style.color = "red";
+
+//!getElementClassName
+
+// let head = document.getElementsByClassName("headClass");
+// - - head[1].style.color = "red"
+// for(let i=0; i<head.length; i++){
+//     head[i].style.color = "red";
+// }
+
+//!getElementByTagName
+// let head = document.getElementsByTagName("h1")
+// head[0].style.color = "red";
+
+
+//! Query Selector
+//ID
+// let head = document.querySelector("#head");
+// head.style.color = "red";
+
+//CLASS
+// let head = document.querySelector(".headClass");
+// head.style.color = "red";
+
+//Tag
+// let head = document.querySelector("h2");
+// head.style.color = "red";
+
+//querySelectorAll
+// let head = document.querySelector("h3");
+// head.style.color = "red";
 
