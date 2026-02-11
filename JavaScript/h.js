@@ -157,3 +157,8 @@ const handleClick = () => {
     const randomIndex = Math.floor(Math.random() * colors.length);
     document.getElementById("main").style.backgroundColor = colors[randomIndex];
 }
+
+const ondbclick = () => {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    document.getElementById("main").style.backgroundColor = colors[randomIndex];
+}

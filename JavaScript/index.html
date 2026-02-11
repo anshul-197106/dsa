@@ -3,6 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Color Change</title>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: white; 
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox" ></div>
+    <button onclick="changeColor()" style="margin-top: 10px;">Change Color</button>
+    <button ondblclick="hideBox()" style="margin-top: 10px;">Hide Box</button>
+
+     <script>
+        const box = document.getElementById("colorBox");
+        box.addEventListener("mouseover", changeColor);
+        function changeColor() {
+            const box = document.getElementById("colorBox");
+            const colors = ["red", "green", "blue", "yellow", "purple"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            box.style.backgroundColor = randomColor;
+        }
+        function hideBox() {
+            const boxElement = document.getElementById("colorBox");
+            if (boxElement.style.display === "block") {
+                boxElement.style.display = "none";
+            } 
+            else {
+                boxElement.style.display = "block";
+            }
+            
+        }
+       mouseover="changeColor()";
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show Hide</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,17 +57,11 @@
 
     <div id="main"></div>
 
-    <button onclick="handleClick()">Show / Hide</button>
+    <button onclick="handleClick" ondblclick="handleDbClick">Show / Hide</button>
 
     <script src="h.js"></script>
 </body>
-</html>
-
-
-
-
-
-
+</html> -->
 <!-- <h1 id = "head"></h1>
 <div id = "div"></div> -->
 <!-- </h1>class="headClass">HTML + JS</h1> -->
