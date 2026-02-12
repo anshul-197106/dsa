@@ -1,0 +1,21 @@
+<!-- create input filed and paragraph which shows the character countand update the count on keyup  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <input type="text" id="inp" onkeyup="countChar()" placeholder="Type something...">
+    <p id="count">Characters: 0</p>
+
+    <script>
+        function countChar() {
+            let text = document.getElementById("inp").value;
+            document.getElementById("count").innerHTML = 
+                "Characters: " + text.length;
+        }
+    </script> 
+</body>
+</html>

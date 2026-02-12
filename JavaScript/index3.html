@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            border-radius: 6px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            margin-left: 5px;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00d4ff;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        #output {
+            width: 300px;
+        }
+
+        .para {
+            background-color: white;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .para:hover {
+            background-color: #ffdddd;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="task" placeholder="Task">
+        <input type="submit" value="submit">
+    </form>
+    
+    <div id="output"></div>
+
+    <script>
+        const handleSubmit = (e) => {
+            e.preventDefault();
+
+            let task = document.getElementById("task");
+            let output = document.getElementById("output");
+
+            let p = document.createElement("p");
+            p.innerHTML = task.value;
+
+            output.append(p);
+
+            task.value = "";
+
+            p.classList.add("para")
+
+            p.style.cursor = "pointer";
+            p.onclick = function() {
+                p.remove();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -2,6 +2,9 @@
 // single threading(one task at one time)
 // alert("External JS..")
 
+let arr = ["Python","JS", 1];
+arr[0] = "CSS";
+
 
 // var a = 20;           //functional scope, re-declare and re assign
 // let b = "Hello";      //block scope
@@ -147,18 +150,20 @@
 //     }
 // };
 
-colors = ["red", "blue", "green", "orange", "purple", "black"];
-i = 0;
+// colors = ["red", "blue", "green", "orange", "purple", "black"];
+// i = 0;
 
-const handleClick = () => {
-    // i = i + 1;
-    // document.getElementById("main").style.backgroundColor = colors[i];
+// const handleClick = () => {
+//     // i = i + 1;
+//     // document.getElementById("main").style.backgroundColor = colors[i];
 
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    document.getElementById("main").style.backgroundColor = colors[randomIndex];
-}
+//     const randomIndex = Math.floor(Math.random() * colors.length);
+//     document.getElementById("main").style.backgroundColor = colors[randomIndex];
+// }
 
-const ondbclick = () => {
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    document.getElementById("main").style.backgroundColor = colors[randomIndex];
-}
+// const ondbclick = () => {
+//     const randomIndex = Math.floor(Math.random() * colors.length);
+//     document.getElementById("main").style.backgroundColor = colors[randomIndex];
+// }
+
+

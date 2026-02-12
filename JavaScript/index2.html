@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" onkeydown="handledown()" onkeyup="handleup()" placeholder="Type Something..."/>
+    <h1 id="output"></h1>
+    <input type="text1" onkeypress="arise()" placeholder="Type Something..."/>
+    <script>
+        const handleDown = () => {
+            const h1Element =document.getElementById("output");
+            h1Element.innerText = "Key is pressed down";
+        }
+        const handleUp = () => {
+            const h1Element =document.getElementById("output");
+            h1Element.innerText = "Key is released";
+        }
+        const arise = () => {
+            const h1Element =document.getElementById("output");
+            h1Element.innerText = "Key is pressed";
+        }
+    </script>
+</body>
+</html>
