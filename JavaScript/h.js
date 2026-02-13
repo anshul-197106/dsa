@@ -32,8 +32,6 @@
     //     console.log(num + 5);
     // })
     
-    
-    
     // var a = 20;           //functional scope, re-declare and re assign
     // let b = "Hello";      //block scope
     // const c = 30;         //block scope
