@@ -159,5 +159,3 @@ async function fetchData() {
         
     })
 }
-
-
