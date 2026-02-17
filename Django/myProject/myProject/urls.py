@@ -21,7 +21,7 @@ from shop.views import shopDetail, shopList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.home, name='home'),  # ← change this
+    path('', views.home, name='home'),  # ← change this
     path('about/', views.about, name='about'),
     path('shop/', include('shop.urls')),
     # path('shopList/', shopList, name='shopList'),
